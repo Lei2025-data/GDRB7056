@@ -1,1 +1,33 @@
+package.name : "CellCycle"
 
+library :
+    - Seurat
+    - dplyr
+    - ggplot2
+    - patchwork
+
+path :
+    Colors.R    : /public2/Bio/pipeline/GeneralPlot/v1.3.2/src/Rlib/Colors/Colors.R
+    all.theme.r : /public2/Bio/pipeline/GeneralPlot/v1.3.2/src/Rlib/all.theme.r
+    utilities.R : lib/utilities.R
+    plotting.R  : lib/plotting.R
+    circos.R    : lib/circos.R
+    cellcycle.R : lib/cellcycle.R
+    differential_expression.R : lib/differential_expression.R
+#	feature_rename.R : lib/feature_rename.R
+#    data_import.R    : lib/data_import.R
+#    filter.R         : lib/filter.R
+#    normalization.R  : lib/normalization.R
+#    integration.R    : lib/integration.R
+#    cluster.R        : lib/cluster.R
+#    dimensional_reduction.R   : lib/dimensional_reduction.R
+#    autothres.R      : lib/autothres.R
+    modify_seurat.R  : lib/modify_seurat.R
+
+dependencies :
+    utilities.R : [ Colors.R ]
+    plotting.R  : [ utilities.R, all.theme.r ]
+    differential_expression.R : [ utilities.R ]
+    circos.R    : ~
+    cellcycle.R : ~
+    modify_seurat.R : ~
