@@ -1,0 +1,7 @@
+Samples.pct       : 0.25
+CountsPerGene.pct : 0.01
+CountsPerGene     : null
+split             : 10
+outdir            : /public2/Bio/Project/GDRB7056/GDRB7056_sup_21/4.scenic/out/2.FilterGene
+
+

@@ -1,0 +1,21 @@
+project     : "GDRB7056_sup_21"
+species     : "Mus musculus"
+ref         : GRCm38
+object      : /public2/Bio/Project/GDRB7056/GDRB7056_sup_21/3.diff/obj.Rda
+namelist    : /Bio/Database/Database/pipRef/Mus_musculus/Ensembl_release98/ref4SingleCell/GRCm38/genes/name_list.xls
+samples.use  : null
+clusters.use : null
+metadata :
+   sample.col  : orig.ident
+   cluster.col : seurat_clusters
+   groups :
+      orig.label : null
+      new.label  : null
+   clusters :
+      orig.label : null
+      new.label  : null
+      set.ident : true
+nCores : 5
+outdir : /public2/Bio/Project/GDRB7056/GDRB7056_sup_21/4.scenic/out/1.CreateScenicOptions
+
+
