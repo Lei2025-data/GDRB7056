@@ -1,0 +1,22 @@
+---
+FindMarkers:
+  is.differ: TRUE
+  logfc: 0.25
+  min_pct: 0.25
+  pvalue: 0.01
+  ref: /Bio/Database/Database/pipRef/Mus_musculus/Ensembl_release98/ref4SingleCell/GRCm38/
+  top: 5
+brief_outname: GDRB7056_sup_38-Mus_musculus-CellCycle-brief_result
+cluster_name: ~
+database: /Bio/Bin/pipeline/SingleCell_Collections/SubPipe/CellCycle/v1.1/database/cc.marker.1.yaml
+is.save_object: FALSE
+obj_file: /public2/Bio/Project/GDRB7056/GDRB7056_sup_28/1.pipe/pipe/2.Seurat/obj.Rda
+outname: GDRB7056_sup_38-Mus_musculus-CellCycle-result
+project_id: GDRB7056_sup_38
+ref:
+  dir: /Bio/Database/Database/pipRef/Mus_musculus/Ensembl_release98/ref4SingleCell/GRCm38/
+  name: GRCm38
+sample_name: ~
+species: Mus_musculus
+thres: 0
+version: 1.1
