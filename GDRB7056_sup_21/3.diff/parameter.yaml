@@ -1,0 +1,51 @@
+---
+FindMarkers:
+  log2fc: 0.36
+  method: MAST
+  min_pct: 0.1
+  pvalue: 0.05
+  use.q: true
+cluster.use: ~
+content: 'Mus musculus ---- 6 scRNA-seq Differ'
+data:
+  object: /public2/Bio/Project/GDRB7056/GDRB7056_sup_21/3.diff/obj.Rda
+  ref: /Bio/Database/Database/pipRef/Mus_musculus/Ensembl_release98/ref4SingleCell/GRCm38
+  sample_name:
+    - WT-1
+    - WT-2
+    - Aa-1
+    - Aa-2
+    - KO-1
+    - KO-2
+demo: ~
+differ:
+  -
+    - WT
+    - KO
+  -
+    - WT
+    - Aa
+  -
+    - Aa
+    - KO
+differ_name:
+  - WT-vs-KO
+  - WT-vs-Aa
+  - Aa-vs-KO
+group:
+  by_sample:
+    Aa:
+      - Aa-1
+      - Aa-2
+    KO:
+      - KO-1
+      - KO-2
+    WT:
+      - WT-1
+      - WT-2
+plots:
+  reduce: tsne
+  top: 5
+project_id: GDRB7056_sup_21
+ref_name: Ensembl98 mm10 GRCm38
+version: 1.4
