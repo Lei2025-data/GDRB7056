@@ -1,0 +1,1 @@
+/state/partition1/WORK/lib-devel/working_library/anaconda2/envs/R-3.5.1/bin/Rscript /Bio/Bin/pipeline/SingleCell_Collections/SubPipe/scDiffer/v1.4/lib/scDiffer.R /public2/Bio/Project/GDRB7056/GDRB7056_sup_21/3.diff/pipe/1.Seurat/parameter.yaml /public2/Bio/Project/GDRB7056/GDRB7056_sup_21/3.diff/pipe/1.Seurat /Bio/Bin/pipeline/SingleCell_Collections/scRNAseq/v3.3/lib/Seurat_lib.R
