@@ -1,0 +1,32 @@
+---
+analyse:
+  - run_monocle
+  - diff_state
+  - diff_pseudotime
+  - diff_branch
+cell_use: ~
+cluster_exclude: ~
+cluster_use: ~
+config_file: /public2/Bio/Project/GDRB7056/GDRB7056_sup_28/1.monocle/pipe/1.Monocle/conf_record.yaml
+diff_branch:
+  thres: 1e-7
+  use.q: true
+diff_pseudotime:
+  thres: 1e-7
+  use.q: true
+diff_state:
+  thres: 1e-7
+  use.q: true
+feature_use: ~
+mnc_obj: ~
+obj_file: /public2/Bio/Project/GDRB7056/GDRB7056_sup_28/1.pipe/pipe/2.Seurat/obj.Rda
+outname: GDRB7056_sup_28-Mus_musculus-Trajectory
+project_id: GDRB7056_sup_28
+ref: /Bio/Database/Database/pipRef/Mus_musculus/Ensembl_release98/ref4SingleCell/GRCm38
+ref_dir: /Bio/Database/Database/pipRef/Mus_musculus/Ensembl_release98/ref4SingleCell/GRCm38
+ref_name: GRCm38
+rename_state: ~
+root_state: 1
+sample_use: ~
+species: Mus_musculus
+version: 2.2
