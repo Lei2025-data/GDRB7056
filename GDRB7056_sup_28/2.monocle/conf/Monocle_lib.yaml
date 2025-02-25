@@ -1,1 +1,38 @@
+package.name : "Seurat_lib"
 
+library :
+    - Seurat
+    - dplyr
+    - ggplot2
+    - patchwork
+
+path :
+    Colors.R    : /Bio/Bin/pipeline/GeneralPlot/v1.1.0/src/Rlib/Colors/Colors.R
+    all.theme.r : /Bio/Bin/pipeline/GeneralPlot/v1.1.0/src/Rlib/all.theme.r
+    feature_rename.R : lib/feature_rename.R
+    utilities.R      : lib/utilities.R
+    data_import.R    : lib/data_import.R
+    filter.R         : lib/filter.R
+    normalization.R  : lib/normalization.R
+    plotting.R       : lib/plotting.R
+    integration.R    : lib/integration.R
+    cluster.R        : lib/cluster.R
+    dimensional_reduction.R   : lib/dimensional_reduction.R
+    differential_expression.R : lib/differential_expression.R
+    autothres.R      : lib/autothres.R
+    modify_monocle.R : lib/modify_monocle.R
+    Monocle_lib.R    : lib/Monocle_lib.R
+
+dependencies :
+#    feature_rename.R : ~
+#    utilities.R      : ~
+#    data_import.R    : [ utilities.R, Colors.R ]
+#    filter.R         : [ utilities.R, autothres.R ]
+#    normalization.R  : [ utilities.R ]
+#    integration.R    : ~
+#    dimensional_reduction.R : ~
+    cluster.R        : [ utilities.R, Colors.R, plotting.R ]
+    plotting.R       : [ utilities.R, all.theme.r ]
+#    differential_expression.R : [ utilities.R ]
+#    modify_monocle.R : ~
+    Monocle_lib.R : [ modify_monocle.R, utilities.R ]
